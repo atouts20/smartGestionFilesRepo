@@ -23,6 +23,17 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
 
+openapi:
+  service:
+    title: entite-service doc
+    version: 1.0.0
+    url: http://localhost:9000
+springdoc:
+  api-docs:
+    path: /entite-service/v3/api-docs
+  swagger-ui:
+    path: /entite-service/swagger-ui.html
+
 
 logging:
   pattern:

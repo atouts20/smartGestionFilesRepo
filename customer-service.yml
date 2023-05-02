@@ -18,7 +18,18 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
 
+openapi:
+  service:
+    title: customer-service doc
+    version: 1.0.0
+    url: http://localhost:9000
+springdoc:
+  api-docs:
+    path: /customer-service/v3/api-docs
+  swagger-ui:
+    path: /customer-service/swagger-ui.html
 
+ 
 
 
 logging:

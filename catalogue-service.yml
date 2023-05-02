@@ -18,6 +18,17 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
 
+openapi:
+  service:
+    title: catalogue-service doc
+    version: 1.0.0
+    url: http://localhost:9000
+springdoc:
+  api-docs:
+    path: /catalogue-service/v3/api-docs
+  swagger-ui:
+    path: /catalogue-service/swagger-ui.html
+
 logging:
   pattern:
     level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
