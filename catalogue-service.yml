@@ -1,24 +1,5 @@
-spring:
-  datasource:
-    driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5433/cataloguedb
-    username: postgres
-    password: P@@SSword2121
-
-  mvc:
-    pathmatch:
-      matching-strategy: ant_path_matcher
-
-  jpa:
-    show-sql: true
-    generate-ddl: true
-    open-in-view: false
-    hibernate.ddl-auto: create-drop
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
-
- 
+server:
+  port: 7892
 
 logging:
   pattern:
@@ -57,6 +38,27 @@ management:
     os:
       enabled: true
 
- 
+
+spring:
+  application:
+    name: catalogue-service
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5433/cataloguedb
+    username: postgres
+    password: P@@SSword2121
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    open-in-view: false
+    hibernate.ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
 
 
