@@ -1,2 +1,24 @@
+spring:   
+    username: postgres
+    password: P@@SSword2121
+    url: jdbc:postgresql://localhost:5433/decoupagedb
+    hikari:
+      connection-timeout: 2000 #ms
+      maximum-pool-size: 5
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    open-in-view: false
+    hibernate.ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+
 polar:
-  greeting: "Welcome to the production catalog from the config server"
+  greeting: Welcome to the local book catalog!
