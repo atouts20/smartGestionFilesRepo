@@ -1,5 +1,5 @@
 spring:
-cloud:
+  cloud:
     consul:
       discovery:
         # instance-id must not be empty, must start with letter, end wit ha letter or digit, and have as interior characters ony
